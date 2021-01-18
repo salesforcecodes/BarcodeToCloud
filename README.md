@@ -3,9 +3,9 @@
 Scan and send barcode data to Salesforce. Then execute configurable actions in Salesforce for every barcode scan.
 
 ## Features
- - Easy way to connect to Salesforce
- - Ability to scan wide range of barcode formats like QR Code, Code 128, Code 39, Data Matrix, Codebar, PDF417, EAN13, ISBN etc
- - Ability to execute configurable actions in Salesforce (Create, Update, Delete or Display records in Salesforce directly from mobile app)
+ - Connect and send barcode data to Salesforce easily
+ - Scan wide range of barcode formats like QR Code, Code 128, Code 39, Data Matrix, Codebar, PDF417, EAN13, ISBN etc
+ - Execute configurable actions in Salesforce (Create, Update, Display or Delete records from the mobile app)
 
 ## Demo videos
 
