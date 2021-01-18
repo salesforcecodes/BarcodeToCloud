@@ -1,5 +1,6 @@
 # BarcodeToCloud
-    Scan and send barcode data to Salesforce. Then execute configurable actions in Salesforce for every barcode scan.
+
+Scan and send barcode data to Salesforce. Then execute configurable actions in Salesforce for every barcode scan.
 
 ## Features
  - Easy way to connect to Salesforce
