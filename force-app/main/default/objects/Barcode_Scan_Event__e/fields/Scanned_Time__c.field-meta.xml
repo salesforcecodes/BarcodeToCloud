@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scanned_Time__c</fullName>
+    <description>Time on the mobile device when barcode was scanned</description>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Scanned Time</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

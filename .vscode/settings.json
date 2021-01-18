@@ -1,0 +1,23 @@
+{
+  "editor.codeActionsOnSave": {
+  "source.fixAll": true
+},
+"prettier.configPath": ".prettierrc",
+"prettier.requireConfig": true,
+"html.format.wrapLineLength": 120,
+"html.format.wrapAttributes": "auto",
+"html.format.endWithNewline": true,
+"[html]": {
+  "editor.defaultFormatter": "vscode.html-language-features"
+},
+"editor.formatOnSave": true,
+"[json]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"editor.wordWrap": "on",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sfdx": true
+  }
+}
