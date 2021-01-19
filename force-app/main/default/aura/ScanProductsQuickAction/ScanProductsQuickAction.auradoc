@@ -1,0 +1,7 @@
+<aura:documentation>
+	<aura:description>Documentation</aura:description>
+	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
+		This quickaction aura component includes a lwc component to support addition of products to opportunity through
+		scanning barcode.
+	</aura:example>
+</aura:documentation>

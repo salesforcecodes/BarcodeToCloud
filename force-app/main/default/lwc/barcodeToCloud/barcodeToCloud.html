@@ -24,43 +24,84 @@
         <div class="slds-card__body">
             <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
                 <lightning-accordion-section name="1" label="Installation">
-                    <p>
-                        Download and install
-                        <a href="https://play.google.com/store/apps/details?id=com.albertdev.barcodetocloud"
-                            target="_blank" class="download-link">
-                            BarcodeToCloud
-                        </a>
-                        mobile app from play store
-                    </p>
-                    <br />
+                    <div class="acc-wrapper">
+                        <p>
+                            Download and install
+                            <a href="https://play.google.com/store/apps/details?id=com.albertdev.barcodetocloud"
+                                target="_blank" class="download-link">
+                                BarcodeToCloud
+                            </a>
+                            mobile app from play store
+                        </p>
+                    </div>
                 </lightning-accordion-section>
 
                 <lightning-accordion-section name="2" label="Configuration">
-                    <p>
-                        <span class="step-number">1</span> Establish a connection to Salesforce.
-                    </p>
-                    <br />
-                    <p>
-                        <span class="step-number">2</span> Specify what should happen when a barcode is scanned. You can
-                        configure the app to Create/Update/Display/Delete records in Salesforce.
-                    </p>
-                    <br />
+                    <div class="acc-wrapper">
+                        <p>
+                            <span class="step-number">1 - </span>
+                            Establish a connection to Salesforce.
+                        </p>
+                        <br />
+                        <p>
+                            <span class="step-number">2 - </span>
+                            Specify what should happen when a barcode is scanned.
+                            You can configure the app to Create/Update/Display/Delete records in Salesforce.
+                        </p>
+                        <br />
+                        <p>
+                            <span class="step-number">3 - </span>
+                            Start scanning records and see changes in Salesforce.
+                        </p>
+                    </div>
                 </lightning-accordion-section>
 
-                <lightning-accordion-section name="3" label="Demo Videos">
-                    <lightning-layout horizontal-align="spread">
-                        <lightning-layout-item padding="around-small">
-                            <p>
-                                Detailed walkthrough of the app.
-                                <br />
-                                <a href="https://youtu.be/b3ArzkmR6kc" title="BarcodeToCloud Detailed Demo">
-                                    <img src="https://github.com/salesforcecodes/BarcodeToCloud/raw/main/images/video-detailed.png"
-                                        alt="BarcodeToCloud Detailed Demo"
-                                        data-canonical-src="https://i.imgur.com/fAEMnUd.png" style="max-width:80%;"></a>
-                            </p>
-                        </lightning-layout-item>
-                    </lightning-layout>
-                    <a href="https://www.youtube.com/watch?v=b3ArzkmR6kc" target="_blank">Detailed walkthrough</a>
+                <lightning-accordion-section name="3" label="Executing custom code">
+                    <div class="acc-wrapper">
+                        <p>
+                            For most usecases, Create/Update/Display/Delete operations available in app settings are
+                            enough. But if you need to execute custom apex code in Salesforce,
+                            you can configure the app to publish/create records in
+                            <strong> Barcode_Scan_Event__e </strong>platform event.
+                            This platform event is already deployed to your code. Then add logic to execute on this
+                            platform event.
+                        </p>
+                        <br>
+                        <p>
+                            <span class="step-number">Example 1 - Execute apex in backend for every scan
+                                operation</span>
+                        </p>
+                        <p>
+                            Write trigger on <strong>Barcode_Scan_Event__e</strong> platform event and write your custom
+                            logic.
+                        </p>
+                        <br>
+                        <p>
+                            <span class="step-number">Example 2 - Show some data in Salesforce interface like adding
+                                product to opportunity</span>
+                        </p>
+                        <p>
+                            Subscribe to <strong>Barcode_Scan_Event__e</strong> platform event using lightning empapi
+                            and write your LWC code.
+                            A sample quick action can be found on opportunity with name "Scan Products".
+                        </p>
+                    </div>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="4" label="Demo Videos">
+                    <div class="acc-wrapper">
+                        <lightning-layout horizontal-align="spread">
+                            <lightning-layout-item padding="around-small">
+                                <p>
+                                    <a href="https://youtu.be/b3ArzkmR6kc" target="_blank"
+                                        title="BarcodeToCloud Detailed Demo">
+                                        <img src="https://github.com/salesforcecodes/BarcodeToCloud/raw/main/images/video-detailed.png"
+                                            alt="BarcodeToCloud Detailed Demo" class="thumb-style" />
+                                    </a>
+                                </p>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </div>
                 </lightning-accordion-section>
             </lightning-accordion>
         </div>

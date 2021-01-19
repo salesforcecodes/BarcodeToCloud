@@ -5,6 +5,16 @@
 }
 
 .step-number {
+    font-size: 1.3em;
     font-weight:bold;
     font-style: italic;
+}
+
+.acc-wrapper {
+    margin: 20px 30px;
+}
+
+.thumb-style {
+    max-width: 40%;
+    margin:4%;
 }

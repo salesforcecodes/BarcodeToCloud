@@ -1,0 +1,60 @@
+<template>
+    Test. {recordId} {isConnected}
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Product">Product</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Code">Code</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Quantity">Quantity</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Unit Price">Unit Price</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Description">Description</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Remove">Remove</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={itemArray} for:item="item">
+                <tr key={item.Id}>
+                    <th data-label="Product" scope="row">
+                        <div class="slds-truncate" title="Item">
+                            <a href="javascript:void(0);" tabindex="-1">{item.PricebookEntry.Product2.Name}</a>
+                        </div>
+                    </th>
+                    <td data-label="Account Name">
+                        <div class="slds-truncate" title="Code">
+                            {item.PricebookEntry.Product2.ProductCode}
+                        </div>
+                    </td>
+                    <td data-label="Quantity">
+                        <div class="slds-truncate" title="Quantity">
+                            <lightning-input type="number" name="Quantity" value={item.Quantity}></lightning-input>
+                        </div>
+                    </td>
+                    <td data-label="Unit Price">
+                        <div class="slds-truncate" title="Unit price">
+                            <lightning-input type="number" name="UnitPrice" value={item.UnitPrice}></lightning-input>
+                        </div>
+                    </td>
+                    <td data-label="Description">
+                        <div class="slds-truncate" title={item.Description}>{item.Description}</div>
+                    </td>
+                    <td data-label="Delete">
+                        <!-- <lightning:button label="" onclick="{! c.removeItem }" name="{!index}" iconName="utility:delete"
+                            iconPosition="left" variant="destructive" /> -->
+                    </td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</template>

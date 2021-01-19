@@ -1,0 +1,3 @@
+<aura:component implements="force:lightningQuickAction, force:hasRecordId">
+    <c:scanProducts recordId="{!v.recordId}"></c:scanProducts>
+</aura:component>
