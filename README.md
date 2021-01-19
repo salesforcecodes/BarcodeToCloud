@@ -19,7 +19,7 @@ Detailed walkthrough of the app.
 
 ## Deploy supplement code to Salesforce (Optional)
 
-<a href="https://githubsfdeploy.herokuapp.com/app/githubdeploy/salesforcecodes/BarcodeToCloud">
+<a href="https://githubsfdeploy.herokuapp.com/app/githubdeploy/salesforcecodes/barcodetocloud">
   <img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png" alt="Deploy to Salesforce" />
 </a>
 
