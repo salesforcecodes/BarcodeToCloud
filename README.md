@@ -19,8 +19,8 @@ Detailed walkthrough of the app.
 
 ## Deploy supplement code to Salesforce (Optional)
 
-<a href="https://githubsfdeploy.herokuapp.com/?owner=salesforcecodes&repo=barcodetocloud">
-  <img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png" alt="Deploy to Salesforce" />
+<a href="https://githubsfdeploy.herokuapp.com/app/githubdeploy/salesforcecodes/BarcodeToCloud">
+  <img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png" alt="Deploy to Salesforce" />
 </a>
 
 Note :- By default deploy will take you to https://login.salesforce.com address which is valid for production/developer environments only. If you are using a sandbox or other type of environments, use the "Use Custom Domain" link in Salesforce login page.
